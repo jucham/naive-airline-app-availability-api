@@ -1,0 +1,32 @@
+[
+  {
+    "flightNumber": 1000,
+    "originAirportCode": "NCE",
+    "destinationAirportCode": "AMS",
+    "startDate": "3019-09-15T09:00:00",
+    "duration": 90,
+    "aircraftType": "A350",
+    "pricePerPassenger": 120,
+    "remainingSeats": 42
+  },
+  {
+    "flightNumber": 2000,
+    "originAirportCode": "NCE",
+    "destinationAirportCode": "AMS",
+    "startDate": "3019-09-15T10:00:00",
+    "duration": 90,
+    "aircraftType": "A350",
+    "pricePerPassenger": 120,
+    "remainingSeats": 42
+  },
+  {
+    "flightNumber": 3000,
+    "originAirportCode": "NCE",
+    "destinationAirportCode": "AMS",
+    "startDate": "3019-09-15T11:00:00",
+    "duration": 90,
+    "aircraftType": "A350",
+    "pricePerPassenger": 120,
+    "remainingSeats": 42
+  }
+]

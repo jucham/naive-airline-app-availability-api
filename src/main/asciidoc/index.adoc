@@ -1,0 +1,54 @@
+= Naive Airline App Documentation
+:doctype: book
+:page-layout!:
+:toc: right
+:toclevels: 2
+:sectanchors:
+:sectlinks:
+:sectnums:
+:linkattrs:
+:source-highlighter: highlightjs
+
+[[overview-availability-api]]
+== Availability API
+
+include::{snippets}/availability-controller-tests/get_200_with_results_sorted_by_date/auto-section.adoc[]
+
+[[errors]]
+==  Errors
+
+For successful requests, HTTP 2XX status codes are returned.
+
+For failed requests, HTTP 4XX or 5XX status codes are returned.
+
+NAA returns these HTTP status codes:
+
+|===
+|Status Code |Description
+
+|200 OK
+|The request has been successfully done.
+
+|406 Not Acceptable
+|The media type requested is not handled
+
+|400 Bad Request
+|Request is not well-formed.
+
+|404 Not Found
+|The resource does not exist.
+
+|500 Internal Server Error
+|An internal server error has occurred.
+|===
+
+===  Error response
+
+All error responses use a consistent message form as in this example :
+[source,http,options="nowrap"]
+----
+{
+  "error" : "not_acceptable",
+  "errorDescription" : "acceptable MIME types: [application/json, application/*+json]"
+}
+----

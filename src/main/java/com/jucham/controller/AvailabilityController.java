@@ -26,7 +26,7 @@ public class AvailabilityController {
     }
 
     /**
-     * Get the flight availability
+     * Get a flight availability list
      *
      * @param originAirportCode      the airport code of origin
      * @param destinationAirportCode the airport code of destination
